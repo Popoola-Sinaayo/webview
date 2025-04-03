@@ -1,5 +1,7 @@
 "use client";
 import { useEffect } from "react";
+import styles from "./page.module.css";
+import LoadingIcons from "react-loading-icons";
 
 declare global {
   interface Window {
@@ -20,9 +22,8 @@ export default function SuccessPage() {
   }, []);
 
   return (
-    <div>
-      <h1>Success</h1>
-      <p>Your transaction was successful.</p>
+    <div className={styles.main}>
+      <LoadingIcons.TailSpin stroke="#7216F3" />
     </div>
   );
 }

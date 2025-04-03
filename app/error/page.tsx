@@ -1,5 +1,7 @@
 "use client";
 import { useEffect } from "react";
+import styles from "./page.module.css";
+import LoadingIcons from "react-loading-icons";
 
 export default function ErrorPage() {
   useEffect(() => {
@@ -12,9 +14,8 @@ export default function ErrorPage() {
   }, []);
 
   return (
-    <div>
-      <h1>Error</h1>
-      <p>Something went wrong with your transaction.</p>
+    <div className={styles.main}>
+      <LoadingIcons.TailSpin stroke="#7216F3" />
     </div>
   );
 }

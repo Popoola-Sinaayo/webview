@@ -29,6 +29,7 @@ function SuccessPage() {
   return (
     <div className={styles.main}>
       <LoadingIcons.TailSpin stroke="#7216F3" />
+      <p>Please wait while we process your payout</p>
     </div>
   );
 }

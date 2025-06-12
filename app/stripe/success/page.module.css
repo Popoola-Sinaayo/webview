@@ -1,0 +1,9 @@
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  flex-direction: column;
+  gap: 20px;
+}

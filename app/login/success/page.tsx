@@ -21,8 +21,6 @@ function SuccessPage() {
     }
     const token = params.get("token")
     console.log(token)
-    
-    
     window.close(); // Closes the WebView
   }, []);
 
